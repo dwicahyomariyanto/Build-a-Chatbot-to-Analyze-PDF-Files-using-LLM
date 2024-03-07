@@ -23,7 +23,7 @@ llm_embeddings = None
 def init_llm():
     global llm, llm_embeddings
     # Initialize the language model with the OpenAI API key
-    api_key="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"
+    api_key="API_KEY_KAMU"
     llm = OpenAI(model_name="gpt-3.5-turbo", openai_api_key=api_key)
     # Initialize the embeddings for the language model
     llm_embeddings = OpenAIEmbeddings(openai_api_key = api_key)
